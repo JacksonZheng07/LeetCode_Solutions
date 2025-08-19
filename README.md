@@ -12,8 +12,8 @@ Each problem folder contains:
 
 | #   | Problem                                      | Difficulty | Topics                  | Folder Link |
 |-----|---------------------------------------------|-----------|------------------------|-------------|
-| 1   | Two Sum                                     | Easy      | Array, Hash Map        | [001_two_sum](problems/001_two_sum) |
-| 3   | Longest Substring Without Repeating Characters | Medium    | Hash Map, Sliding Window | [003_longest_substring_without_repeating_characters](problems/003_longest_substring_without_repeating_characters) |
+| 1   | Two Sum                                     | Easy      | Array, Hash Map        | [001_two_sum](problems/001_two_sum)|
+| 3   | Longest Substring Without Repeating Characters | Medium    | Hash Map, Sliding Window | [003_longest_substring_without_repeating_characters](problems/003_longest_substring_without_repeating_characters)|
 | 4   | Median of Two Sorted Arrays                 | Hard      | Array, Binary Search   | [004_median_of_two_sorted_arrays](problems/004_median_of_two_sorted_arrays) |
 | 5   | Longest Palindromic Substring              | Medium    | String, Dynamic Programming | [005_longest_palindromic_substring](problems/005_longest_palindromic_substring) |
 | 6   | Zigzag Conversion                           | Medium    | String                 | [006_zigzag_conversion](problems/006_zigzag_conversion) |
