@@ -30,21 +30,23 @@ Notice that the answer must be a substring, `"pwke"` is a subsequence and not a 
 - `s consists of English letters, digits, symbols and spaces.`
 
 ---
-
 ### Intuition  
-We want to find the longest substring that contains no duplicate characters. A brute force approach would check all substrings, but that would be too slow. Instead, we can use a sliding window with a hash map (or set) to keep track of characters we’ve seen.
+
+- Keep track of the current substring without duplicates.  
+- When a duplicate character appears, remove characters from the start until the duplicate is gone.  
+- Update the longest substring found so far.
 
 ---
 
-### Algorithm  
-1. Initialize two pointers `left` and `right` to represent the sliding window.  
-2. Use a hash map (or set) to track which characters are currently in the window.  
-3. Expand `right` step by step, adding new characters.  
-   - If the character is already in the set, move `left` until the duplicate is removed.  
-4. Update the maximum window size whenever we expand.  
-5. Continue until the end of the string.  
+### Algorithm 
+1. Initialize two strings: `Sub` for the current substring, `HighestSub` for the longest substring found.  
+2. Loop through each character `letter` in `s`:  
+   - If `letter` is already in `Sub`, remove all characters from the start of `Sub` up to and including the first occurrence of `letter`.  
+   - Append `letter` to `Sub`.  
+   - Update `HighestSub` if `Sub` is longer.  
+3. Return the length of `HighestSub`.
 
 ---
 
-### Complexity  
-- **Time Complexity:** `O(n)` – each character is visited at most twice (once by `right`, once by `left`).  
+### Complexity
+- **Time Complexity:** `O(n^2)` — `letter in Sub` and `Sub.replace()` can take up to O(n) each. 
