@@ -31,7 +31,7 @@ Output: `[0,1]`
 
 ---
 
-## Intuition
+### Intuition
 The problem asks for two numbers that sum to a target.
 
 - Instead of checking every pair (O(n²)), we can use a hash map (dictionary) to remember numbers we’ve seen.
@@ -44,7 +44,7 @@ The problem asks for two numbers that sum to a target.
 
 ---
 
-## Algorithm (Brute Force)
+### Algorithm (Brute Force)
 1. Create an empty dictionary num_to_index to map numbers to their indices.
 2. Loop through the array using enumerate(nums) to get both index i and value num.
 3. Compute the complement: complement = target - num.
@@ -55,7 +55,7 @@ The problem asks for two numbers that sum to a target.
 8. (Optional) Return -1 if no solution is found, though the problem guarantees one.
 
 ---
-## Time Complexity
+### Time Complexity
 
 - We iterate through the array once.  
 - Dictionary lookups (`complement in num_to_index`) and insertions are O(1) on average.  
