@@ -33,7 +33,7 @@ Output: `21`
 
 ---
 
-### Algorithm (Implemented Approach)
+### Algorithm 
 1. Convert integer `x` to string `Reverse`.  
 2. If the first character is `'-'`, remove the sign, reverse the digits, and prepend `'-'`.  
 3. Otherwise, just reverse the string.  

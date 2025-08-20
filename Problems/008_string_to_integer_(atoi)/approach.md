@@ -37,7 +37,7 @@ Output: `4193`
 
 ---
 
-### Algorithm (Implemented Approach)
+### Algorithm
 1. Strip whitespace from the input string.  
 2. Initialize sign = 1 and an empty string to collect digits.  
 3. Check for `+` or `-` sign at the beginning and adjust sign.  

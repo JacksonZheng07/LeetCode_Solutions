@@ -33,7 +33,7 @@ Output: `false`
 
 ---
 
-### Algorithm (Implemented Approach)
+### Algorithm
 1. Convert integer `x` to string.  
 2. Convert string to a list of characters.  
 3. Reverse the list.  

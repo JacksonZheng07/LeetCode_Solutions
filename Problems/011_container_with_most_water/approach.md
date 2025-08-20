@@ -30,7 +30,7 @@ Output: `1`
 
 ---
 
-### Algorithm (Implemented Approach)
+### Algorithm 
 1. Initialize `HighestArea = 0`.  
 2. Set `pointer1` at start, `pointer2` at end.  
 3. While `pointer1 < pointer2`:  
